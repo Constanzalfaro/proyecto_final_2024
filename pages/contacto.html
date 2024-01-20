@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contanto</title>
+
+
+    <!-- fuentes  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;400;900&family=Titillium+Web:wght@200;400;900&display=swap"
+        rel="stylesheet">
+
+    <!-- iconos -->
+
+    <!-- iconos  locacion footer-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- iconos  email footer-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+
+
+
+    <!-- estilos -->
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/app.js"></script>
+    <link rel="shortcut icon" href="../img/icono_pestana.png" />
+
+
+</head>
+
+<body>
+
+   
+
+ <!--   fondo, utilizando BACKGROUND-image -->
+
+ <div class="fondo-contacto"> 
+
+ <!-- menu resposive cambiar palabras del menu  -->
+
+    <header>
+        <div class="contenedor">
+            <nav id="barra-nav" class="barra-nav">
+                <ul>
+                    <li><a href="../index.html"><i class="home barra-nav"></i>Inicio</a></li>
+                    <li><a href="../pages/galeria.html"><i class="galeria-sign-barra-nav"></i>Galeria</a></li>
+                    <li><a href="../pages/contacto.html"><i class="contacto-barra-nav"></i>Contacto</a></li>
+                </ul>
+            </nav>
+            <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+                <div class="hamburguesa"></div>
+            </div>
+        </div>
+
+
+
+
+
+<!-- seccion formulario  -->
+
+ <div>
+    <h2 class="h2-form">Contacto de supervivencia</h2>
+   
+</div>
+
+<main >
+    <div class="div-formulario">
+    <form  class="survey-form" >
+        <label id="name-label" for="name"> </label>
+        <input id="name" type="text" required placeholder="Tu nombre"><br><br>
+        <label id="email-label" for="name"></label>
+        <input aria-required="true" id="email" type="text" pattern=[a-zA-Z0-9_.+-]{3,}@[[a-zA-Z]{2,}.[a-zA-Z]{2,} required placeholder="Email"  ><br><br>
+        <label id="number-label" for="name"> </label>
+        <input id="number" size="60" type="number" min="1" max="130" required placeholder="Edad"><br><br>
+        Continente que te interesa Explorar:
+        <select name="dropdown" #id="dropdown">
+            <option value="blank"></option>
+            <option value="1">America del Norte</option>
+            <option value="2">America del central</option>
+            <option value="3">America del Sur</option>
+            <option value="4">Europa</option>
+            <option value="5">Asia</option>
+            <option value="6">Oceanía</option>
+        </select><br><br>
+        Al momneto de salir a explorar que prefieres llevar contigo<br>
+            <input type="radio" name="tipo de equipaje" value="male">Mochila<br>
+            <input type="radio" name="tipo de equipaje" value="maleta">Maleta<br>
+            <input type="radio" name="tipo de equipaje" value="suenos">Mis sueños y añoranzas<br><br>
+        <input type="checkbox" name="Fun" value="Fun">Check si eres divertido <br>
+        <input type="checkbox" name="Lie" value="Lie">Check si harás esta aventura con miedo, pero no te detendrá <br><br>
+        <br>
+            <textarea class="text-area" rows="10" cols="90">Escribe aqui </textarea><br><br>
+            <button class="boton-enviar" type="submit" form="survey-form" value="Submit"> Enviar </button>
+    </form>
+
+
+
+    
+
+
+
+    </form>
+</div>
+</main>
+
+
+
+
+        <!-- footer incluye textos con iconos ademas de links directos a rrss que   -->
+        <footer>
+            <div class="div-footer">
+                <section>
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <span>Sevilla - Espana</span>
+                </section>
+
+                <section>
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                    <span>constanza.alfaro.alfaro@alumnos.cei.es</span>
+                </section>
+            </div>
+            <span class="borde-footer"></span>
+            <div class="rrss">
+
+                <a title="enlace-rrss" href="https://www.facebook.com/" target="_blank"> <img class="rrss-simbol"
+                        src="../img/facebook.png" alt="logo de faceook con enlace">
+                </a>
+                <a title="enlace-rrss" href="https://www.instagram.com/" target="_blank"> <img class="rrss-simbol"
+                        src="../img/instagram.png" alt="logo de intagram con enlace">
+                </a>
+                <a title="enlace-rrss" href="https://www.vimeo.com/" target="_blank"> <img class="rrss-simbol"
+                        src="../img/vimeo.png" alt="logo vimeo con enlace">
+                </a>
+
+            </div>
+            <div class="copyright">
+                Web creada por Constanza Alfaro - Proyecto final 2024
+            </div>
+        </footer>
+
+
+
+   
+</body>
+
+</html>
